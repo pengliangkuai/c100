@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>i8mi</title>
+        <!--        META SECTION-->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
+        <!--        STYLES SECTION -->
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" /> 
+        <link rel="stylesheet" href="css/lightGreen.css" />
+         <link rel="shortcut icon" type="" href="nor.ico" />
+       <link rel="stylesheet" href="forGundong/dist/css/swiper.min.css">
+        <script type="" src="forGundong/dist/js/swiper.min.js"></script>
+        
+        
+        
+        
+
+        <!--        FONTS SECTION -->
+
+        
+        
+
+
+
+
+        <!--        SCRIPT SECTION -->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script> 
+        <script type="text/javascript" src="forViewer/viewer.min.js"></script>
+        <link rel="stylesheet" href="forViewer/viewer.min.css">
+        <style>
+        .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20px auto;
+    color: white;
+}
+
+.swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+     
+}
+
+.swiper-container .swiper-wrapper .slideA {
+    background-image:#fff;
+     background-image: url(cc/images/fulls/05.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideB {
+    background-color: #8C8;
+     background-image: url(cc/images/fulls/04.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideC {
+    background-color: #b9d116;
+     background-image: url(cc/images/fulls/03.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideD {
+    background-color: #cc8115;
+     background-image: url(cc/images/fulls/02.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideE {
+    background-color: #cc247f;
+    background-image: url(cc/images/fulls/01.jpg);
+}
+
+.swiper-container .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-container .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.swiper-container .swiper-button-prev {
+    background-image: url(../img/left-arrow.svg);
+}
+
+.swiper-container .swiper-button-next {
+  background-image: url(../img/right-arrow.svg);
+}</style>
+        
+
+    </head>
+    <body>
+        <!--    Page initialization      -->
+<!--        <div data-role="page">-->
+
+
+
+            <!--            Header-->
+         <header data-role="header" style="border:none;" id="header">
+                    <div style="width: 100%;height: 220px;">
+                    
+        <!--     Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slideA"><h1></h1></div>
+            <div class="swiper-slide slideB"><h1></h1></div>
+            <div class="swiper-slide slideC"><h1></h1></div>
+            <div class="swiper-slide slideD"><h1></h1></div>
+            <div class="swiper-slide slideE"><h1></h1></div>
+        </div>
+        <!--         Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!--     Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop: true,
+            autoplay: 3000,
+//            speed: 1000,
+            autoplayDisableOnInteraction: false,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+//            effect:'fade'
+            
+        });
+    </script>
+    
+     <style>
+            #header nav div a{
+                color: #666 !important;
+                text-shadow: none;
+            }
+        </style>
+</div>
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a class="" href="index.html" data-transition="flip">首页</a></div>
+                    <div class="ui-block-b"><a href="blog.html" data-transition="flip">阅读</a></div>
+                    <div class="ui-block-c"><a href="portfolio.html" data-transition="flip">作品</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">精选</a></div>
+                </nav>
+               
+               
+            </header>
+            <!--         Heder     END  -->
+ 
+ 
+  <!--
+  
+  <p><img src="images/2wm.png" height="200px" width="200px"></p>
+  -->
+
+
+
+            <!--            Main Content-->
+            <!--
+            <section data-role="content" class="wrappedWidth">
+                <section id="contact">
+                    <img class="mainIMG" src="images/refimages/map.jpg" alt="Map" />
+                    <h2>Contact</h2>
+                    <div class="article-wrapper">
+                        <p>Nam vestibulum, orci sit amet pellentesque molestie, tellus augue varius erat, a euismod augue arcu eu dui. Duis sollicitudin sapien a diam bibendum viverra. Donec congue iaculis porttitor. </p>                    
+                        <span class="name-contact">Jimmy Car</span>
+                        <span class="number-contact">+420 223 568 769</span>
+                        <span class="mail-contact">yourmail@mail.com</span>
+                    </div>
+                </section>
+
+                <section id="CommentForm">
+                    <h2>Send us an email</h2>
+                    <form action="processForm.php" method="post">
+                        <input type="text" name="senderName" id="name" value="" placeholder="Username" />
+                        <input type="text" name="senderEmail" id="mail" value="" placeholder="Mail" />
+                        <textarea name="message" id="text" cols="30" rows="10" placeholder="Text" ></textarea>
+                        <input data-theme="a" type="submit" value="Submit" name="submit" />
+                    </form>
+                </section>
+            </section>
+               -->
+            <!--  Main Content     END  -->
+
+
+ <section data-role="content" id="portfolio" class="wrappedWidth">
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/1.gif" alt="Main Portfolio Image" />
+                        <h2>个性二维码</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/2.gif" alt="Main Portfolio Image" />
+                        <h2>胡子gif</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/3.gif" alt="Main Portfolio Image" />
+                        <h2>日夜更替</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/4.gif" alt="Main Portfolio Image" />
+                        <h2>天空</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/5.gif" alt="Main Portfolio Image" />
+                        <h2>U F O</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/6.gif" alt="Main Portfolio Image" />
+                        <h2>汽艇</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+                <article>
+                    <a href="＃">
+                        <img class="mainIMG" src="images/refimages/7.gif" alt="Main Portfolio Image" />
+                        <h2>天气</h2>
+                        <span>2016.10.6</span>
+                    </a>
+                </article>
+
+
+                <div id="pagination">
+                    <a href="#">Prev</a>
+                    <a href="contact.html">1</a>
+                    <a href="contact.html">2</a>
+                    <a href="contact.html">3</a>
+                    <a href="#">Next</a>
+                </div>
+
+
+
+            <!--         Footer   -->
+            <footer data-role="footer" data-theme="a" data-position="inline">
+            
+
+               
+            </footer>   
+            <!--  Footer     END  -->  
+
+        </div>
+        <!--     Page initialization    END  -->
+    </body>
+</html>
